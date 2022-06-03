@@ -26,8 +26,6 @@ public class LocatorsDemo {
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com");
 		
-		/*WebElement createNewAccountBtn = driver.findElement(By.name("Create new account"));
-		createNewAccountBtn.click();*/ //doesn't work
 		
 		/*WebElement username = driver.findElement(By.id("email"));
 		username.sendKeys("nataly-m@tut.by");
@@ -60,7 +58,7 @@ public class LocatorsDemo {
 		
 	}
 		
-		//doesn't work
+		
 		
 		/*WebElement email = driver.findElement(By.xpath("//input[@type='email']"));
 		email.sendKeys("myemail@gmail.com");*/
