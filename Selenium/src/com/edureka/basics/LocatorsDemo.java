@@ -45,6 +45,8 @@ public class LocatorsDemo {
 		//driver.findElement(By.linkText("Forgot password?")).click(); // the same as next
 		//driver.findElement(By.partialLinkText("password")).click(); // the same as previous
 		
+		
+		//find element by partial link text
 		driver.findElement(By.partialLinkText("account")).click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(2000));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span/input[@value='1']")));
