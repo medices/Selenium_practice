@@ -53,7 +53,32 @@ public class LocatorsDemo {
 		WebElement femaleRadioBtn = driver.findElement(By.xpath("//span/input[@value='1']"));
 		femaleRadioBtn.click();
 		
-			
+		WebElement fname = driver.findElement(By.xpath("//input[@name='firstname' and @aria-label='First name']"));
+		fname.sendKeys("Natalie");
+		
+		/*WebElement fname = driver.findElement(By.xpath("//input[@name='firstname' or @aria-label='First name' and @id='u_2_b_lO']"));
+		fname.sendKeys("Natalie");*/
+		
+		
+		/*Dynamic Value*/
+		/* starts-with and contains*/
+		//tagname[starts-with(@attr,'partial value')]
+		//tagname[starts-with(text(),'partial text']
+		
+		/*WebElement welcomeMsg=driver.findElement(By.xpath("//div[starts-with(text().'Connect your')]"));
+		System.out.println(welcomeMsg.getText()); //just an example, doesn't work at FB*/
+		
+		WebElement mobile = driver.findElement(By.xpath("(//input[@class='inputtext _58mg _5dba _2ph-'])[3]"));
+		mobile.sendKeys("6453678909");
+		
+		//xpath - //tagname[@attr='value']
+        //cssSelector - tagname[attr='value'] - for InternetExplore
+		
+		/*WebElement email = driver.findElement(By.xpath("//input[@type='email']"));
+		email.sendKeys("myemail@gmail.com");*/
+		
+		WebElement email = driver.findElement(By.cssSelector("input[data-testid=\'royal_email\']"));
+		email.sendKeys("myemail@gmail.com");
 	}
 
 	
@@ -62,11 +87,6 @@ public class LocatorsDemo {
 		
 		
 		
-		/*WebElement email = driver.findElement(By.xpath("//input[@type='email']"));
-		email.sendKeys("myemail@gmail.com");*/
-		
-	//}
-
 	
 	
 
