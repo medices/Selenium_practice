@@ -9,7 +9,7 @@ public class LaunchBrowser {
 
 	public static void main(String[] args) {
 	
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Natalya\\eclipse-workspace\\Selenium\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
